@@ -14,13 +14,15 @@ exports.getCoffees = (name) => {
   })
 }
 // name this function get coffees and export it
-exports.getCoffees = function() {
+exports.getCoffeesTitles = function() {
 
   // filter all coffees which is an array of objects
   const coffeeTitles = allCoffees.filter(function(item){
 
     // return each coffee with its title
     return item.title
-
   })
+
+  // showing new array with just titles
+  console.log('here is my new array with just titles', coffeeTitles)
 }
