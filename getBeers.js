@@ -1,7 +1,7 @@
-const beers = require('./data/beer.json')
+const allBeers = require('./data/allBeers.json')
 
 exports.getBeers = (name) => {
-  beers.forEach((beerRecipe) => {
+  allBeers.forEach((beerRecipe) => {
     if (beerRecipe.rating.reviews >= 300)
       console.log(name, 'loves', beerRecipe.id, beerRecipe.name, 'reviews', beerRecipe.rating.reviews)
   })

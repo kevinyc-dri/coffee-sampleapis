@@ -1,9 +1,11 @@
-const { getCoffees } = require('./coffee')
-const { getBeers } = require('./beers')
+const { getCoffees } = require('./getCoffees')
+const { getBeers } = require('./getBeers')
 const { getResources } = require('./education')
 
-const taster = 'Kevin'
+let taster = 'Kevin'
+let student = 'Kevin'
+
 
 getCoffees(taster)
-getBeers(taster)
-getResources(taster)
+// getBeers(taster)
+getResources(student)
